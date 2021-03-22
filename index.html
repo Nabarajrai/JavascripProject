@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity=
+    "sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Buget</title>
+</head>
+<body>
+    <div class="top">
+        <div class="buget">
+            <div class="buget__title">
+                Avaiable buget in <span class="buget__title--month">%month%</span>
+            </div>
+            <div class="buget__value">+2,456.65</div>
+            <div class="buget__income clearfix">
+                <div class="buget__income--text">Income</div>
+                <div class="right">
+                    <div class="buget__income--value">+9,234.67</div>
+                    <div class="buget__income--percentage">&nbsp;</div>
+                </div>
+            </div>
+            <div class="buget__expenses clearfix">
+                <div class="buget__expense--text">Expense</div>
+                <div class="right clearfix">
+                    <div class="buget__expense--value">+9,234.67</div>
+                    <div class="buget__expense--percentage">45%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="add">
+            <div class="add__container">
+                <select name="select" id="select" class="add__type">
+                    <option value="inc">+</option>
+                    <option value="dec">-</option>
+                </select>
+                <input type="text" placeholder="Add description" class="add__description">
+                <input type="number" placeholder="Value" class="add__value">
+                <button class="add__button">
+                    <i class="far fa-check-circle"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+    //   (function(){
+    //     const name=prompt('Please ,enter the your name ?');
+    //     const userAns=prompt(`${name},Are you veg or nonveg ?`);
+    //     if(userAns=='veg'){
+    //         const veg=['panir','kaka','naba'];
+    //         const random=Math.floor(Math.random()*veg.length);
+    //         let items=veg[random];
+    //         alert(`Here is ${name} ${items} for you`);
+    //     }
+    //     else if(userAns=='nonveg'){
+    //         const nonveg=['meat','goat','pig'];
+    //         const random=Math.floor(Math.random()*nonveg.length);
+    //         let item=nonveg[random];
+    //         alert(`Here is ${name} ${item} for you`);
+    //     }
+    //     else{
+    //         alert("invalid");
+    //     }
+    //   })();
+    </script>
+    <script src="./script .js"></script>
+</body>
+</html>

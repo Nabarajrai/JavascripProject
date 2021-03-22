@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #555;
+  height: 100vh;
+  font-weight: 400px;
+  font-size: 16px;
+  position: relative;
+}
+
+.top {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.buget {
+  position: absolute;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.buget__title {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  font-weight: 300;
+}
+.buget__value {
+  font-weight: 300;
+  font-size: 46px;
+  text-align: center;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+.buget__income {
+  background-color: #5ebbbd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+.buget__expenses {
+  background-color: #f57878;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+  height: 40px;
+}
+.buget__income--text {
+  margin-left: 20px;
+  color: #000;
+}
+.buget__expense--text {
+  margin-left: 20px;
+  color: #000;
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 130px;
+}
+.buget__expense--percentage {
+  margin-left: 18px;
+}
+.buget__income--percentage {
+  margin-left: 18px;
+}
+.bottom {
+  background-color: #ccc;
+}
+.add__container {
+  max-width: 550px;
+  margin: auto;
+  padding: 10px;
+ =
+}
+.add__type {
+  height: 40px;
+  width: 50px;
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+.add__description {
+  border: 1px solid #555;
+  border-radius: 3px;
+  height: 40px;
+  width: 300px;
+  margin-left: 10px;
+}
+.add__value {
+  border: 1px solid #555;
+  border-radius: 3px;
+  width: 80px;
+  height: 40px;
+  margin-left: 10px;
+}
+.add__button {
+  height: 30px;
+  width: 40px;
+  border-radius: 90px;
+  margin-left: 10px;
+}

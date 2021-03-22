@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <h2>Stop Watch</h2>
+        <div class="timer">
+            <span class="minutes">00</span>: <span class="second">00</span>
+        </div>
+        <div class="timer-button">
+            <button class="btn btn-primary" data-action="start" >Start</button>
+            <button class="btn btn-success" data-action="stop">stop</button>
+            <button class="btn btn-danger" data-action="reset">Reset</button>
+        </div>
+    </div>
+    <!-- <script>
+        const startButton=document.querySelector('[data-action="start"]');
+        const stopButton=document.querySelector('[data-action="stop"]');
+        const resetButton=document.querySelector('[data-action="reset"]');
+        const minutes=document.querySelector('.minutes');
+        const seconds=document.querySelector('.second');
+        let timer=00;
+        let interval;
+        // let isRuning=true;
+        const startTimer=()=>{
+           interval= setInterval(increment,1000);
+        }
+        const stopTimer=()=>{
+        clearInterval(interval);
+        }
+
+        const resetTimer=()=>{
+            stopTimer();
+            minutes.textContent='00';
+            seconds.textContent='00';
+        }
+        const increment=()=>{
+            timer++;
+               const numOfMinutes=Math.floor(timer/60);
+               const numOfSeconds=timer%60;
+                minutes.textContent=numOfMinutes>10 ? numOfMinutes:'0'+numOfMinutes;
+                seconds.textContent=numOfSeconds>10 ? numOfSeconds: '0' +numOfSeconds ;
+        }
+        startButton.addEventListener('click',startTimer); 
+        stopButton.addEventListener('click',stopTimer);
+        resetButton.addEventListener('click',resetTimer);
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+          const startButton=document.querySelector('[data-action="start"]');
+        const stopButton=document.querySelector('[data-action="stop"]');
+        const resetButton=document.querySelector('[data-action="reset"]');
+        const minutes=document.querySelector('.minutes');
+        const seconds=document.querySelector('.second');
+        let timer=00;
+        let interval;
+        const startTimer=()=>{
+          interval = setInterval(()=>{
+                timer++;
+            const numOfMinutes=Math.floor(timer/60);
+            const numOfSeconds=timer%60;
+            minutes.textContent=numOfMinutes>10 ? numOfMinutes:'0'+numOfMinutes ;
+            seconds.textContent=numOfSeconds>10 ? numOfSeconds: '0' +numOfSeconds;
+            },1000)
+        }
+        const stopTimer=()=>{
+            clearInterval(interval);
+        }
+        const resetTimer=()=>{
+            startTimer();
+            minutes.textContent='00';
+            seconds.textContent='00';
+        }
+        
+        startButton.addEventListener('click',startTimer);
+        stopButton.addEventListener('click',stopTimer);
+        resetButton.addEventListener('click',resetTimer);
+    </script>
+</body>
+</html>
